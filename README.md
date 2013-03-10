@@ -6,7 +6,7 @@
 <p>
     Ok, here's the steps I took to create this demo.
 </p>
-<p class="note">
+<p style="color: #555555; font-style: italic;">
     Please note, I've not created any actual databases for this project as it's wasn't needed for the demonstration.
     <br />
     To add database stuff, use your normal method for connecting and create database entities (essentially classes which map to your database tables).
@@ -27,13 +27,13 @@
             <ul>
                 <li>ID (data type int)</li>
                 <li>Name (data type string)</li>
-                <li>StockQuantity (data type int) <span class="note">I know there is a new property, I'll explain later</span></li>
+                <li>StockQuantity (data type int) <span style="color: #555555; font-style: italic;">I know there is a new property, I'll explain later</span></li>
             </ul>
         </li>
         <li>Next, create a folder in your solution for holding your interface classes. In this case we'll call it, you guessed it, Interfaces</li>
         <li>Now we're going to create the interface for the repository class
             <ul>
-                <li class="note">Interfaces aren't a requirement of the repository pattern, although I highly recommend this approach as it aids in things like unit testing and dependancy injection</li>
+                <li style="color: #555555; font-style: italic;">Interfaces aren't a requirement of the repository pattern, although I highly recommend this approach as it aids in things like unit testing and dependancy injection</li>
             </ul>
         </li>
         <li>Right-click on the Interfaces folder and select "Add -> New Item", then select Interface as the item type and call it IProductRepository</li>
@@ -56,9 +56,9 @@
         </li>
         <li>Make this class inherit from the interface we just created (by adding : IProductRepository after the class name)</li>
         <li>Implement the interface by right-clicking on the interface name after the class name and selecting "Implement Interface -> Implement Interface"</li>
-        <li>In each of the methods, implement code for retrieving or updating the product data and mapping the fields to the ProductModel objects <span class="note">See the code examples</span></li>
-        <li>Now we're going to use these in our application <span class="note">Yay!!</span></li>
-        <li>Right-click on the "Controllers" folder and select "Add -> Controller", and in this case we'll just call it HomeController as this is the default for MVC3 <span class="note">Leave the template as Empty Controller</span></li>
+        <li>In each of the methods, implement code for retrieving or updating the product data and mapping the fields to the ProductModel objects <span style="color: #555555; font-style: italic;">See the code examples</span></li>
+        <li>Now we're going to use these in our application <span style="color: #555555; font-style: italic;">Yay!!</span></li>
+        <li>Right-click on the "Controllers" folder and select "Add -> Controller", and in this case we'll just call it HomeController as this is the default for MVC3 <span style="color: #555555; font-style: italic;">Leave the template as Empty Controller</span></li>
         <li>In the controller, add the "using" statements to include the Repositories and ViewModels namespaces</li>
         <li>In the Index action (created automatically by Visual Studio), create a new ProductRepository instance called productRepo</li>
         <li>Now create a new instance of ProductModel called product for a product called "My Product" by calling the GetProduct method of the repository, as follows:
