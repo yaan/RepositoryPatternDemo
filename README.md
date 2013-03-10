@@ -1,17 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Repository Pattern Demo - Read Me</title>
-    <style type="text/css">
-        body
-        {
-            color: #000;
-        }
-        .note
-        {
-            font-style: italic;
-            color: #555555;   
-        }
-    </style>
 </head>
 <body>
 <p>
