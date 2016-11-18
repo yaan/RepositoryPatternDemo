@@ -33,7 +33,7 @@
         <li>Next, create a folder in your solution for holding your interface classes. In this case we'll call it, you guessed it, Interfaces</li>
         <li>Now we're going to create the interface for the repository class
             <ul>
-                <li><i>Interfaces aren't a requirement of the repository pattern, although I highly recommend this approach as it aids in things like unit testing and dependancy injection</i></li>
+                <li><i>Interfaces aren't a requirement of the repository pattern, although I highly recommend this approach as it aids in things like unit testing and dependency injection</i></li>
             </ul>
         </li>
         <li>Right-click on the Interfaces folder and select "Add -> New Item", then select Interface as the item type and call it IProductRepository</li>
